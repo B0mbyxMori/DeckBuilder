@@ -1,10 +1,9 @@
 class Card implements CardInterface {
-	private Object face; // NOTE: Update to Face Object.
+	private Object face; // NOTE: Update to CardFace Object.
 
 	public Card {
 		this.face = face;
 	}
 
-	public void getFace();
-	public void setFace();
+	public void getFace(); // Will return CardFace.getImage();
 }

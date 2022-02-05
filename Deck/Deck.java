@@ -1,5 +1,5 @@
-public class Deck implements DeckInterface {
-        private Object back; // NOTE: Update to Back object.
+class Deck implements DeckInterface {
+        private CardBack back;
         private String type;
         private byte numberOfCards;
 
@@ -9,8 +9,7 @@ public class Deck implements DeckInterface {
                 this.numberOfCards = numberOfCards;
         }
 
-        public void getBack();
-        public void setBack();
+        public void getBack(); // Will return CardBack.getImage();
 
         public void getType();
         public void setType();

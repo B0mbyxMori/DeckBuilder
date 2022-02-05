@@ -1,4 +1,4 @@
 interface CardInterface {
 	void getFace();
-	void setFace();
+	// void setFace(Image face);
 }
