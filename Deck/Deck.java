@@ -1,19 +1,19 @@
 class Deck implements DeckInterface {
         private CardBack back;
-        private String type;
-        private byte numberOfCards;
+        private int numberOfCards;
+        private String deckName;
 
-        public Deck {
+        public Deck(CardBack back, int numberOfCards, String deckName) {
                 this.back = back;
-                this.type = type;
+                this.deckName = deckName;
                 this.numberOfCards = numberOfCards;
         }
 
-        public void getBack(); // Will return CardBack.getImage();
+        public Image getBackImage(); // Will return CardBack.getImage();
 
-        public void getType();
-        public void setType();
+        public String getDeckName();
+        public void setDeckName(String deckName);
 
-        public void getNumberOfCards();
-        public void setNumberOfCards();
+        public int getNumberOfCards();
+        public void setNumberOfCards(int numberOfCards);
 }
