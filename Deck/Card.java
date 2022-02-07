@@ -5,6 +5,11 @@ class Card implements CardInterface {
 		this.face = face;
 	}
 
-	public Image getFace(); // Will return CardFace.getImage();
-	public void setFace(Image face);
+	public Image getFace() {
+		return CardFace.Image();
+	};
+
+	public void setFace(Image updatedFace) {
+		this.face = updatedFace;
+	};
 }

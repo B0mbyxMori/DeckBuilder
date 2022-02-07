@@ -5,6 +5,11 @@ class CardImage implements CardImageInterface {
 		this.image = image;
 	}
 
-	public Image getImage(); // Will return image.
-	public void setImage(Image image);
+	public Image getImage() {
+		return image;
+	};
+
+	public void setImage(Image updatedImage) {
+		this.image = updatedImage;
+	};
 }

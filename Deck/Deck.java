@@ -9,11 +9,23 @@ class Deck implements DeckInterface {
                 this.numberOfCards = numberOfCards;
         }
 
-        public Image getBackImage(); // Will return CardBack.getImage();
+        public Image getBackImage() {
+                return CardBack.getImage();
+        };
 
-        public String getDeckName();
-        public void setDeckName(String deckName);
+        public String getDeckName() {
+                return deckName;
+        };
 
-        public int getNumberOfCards();
-        public void setNumberOfCards(int numberOfCards);
+        public void setDeckName(String updatedDeckName) {
+                this.deckName = updatedDeckName;
+        };
+
+        public int getNumberOfCards() {
+                return numberOfCards;
+        };
+
+        public void setNumberOfCards(int updatedNumberOfCards) {
+                this.numberOfCards = updatedNumberOfCards;
+        };
 }
