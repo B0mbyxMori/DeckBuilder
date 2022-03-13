@@ -1,7 +1,9 @@
+import java.awt.Image;
+
 class CardImage implements CardImageInterface {
 	private Image image;
 
-	public CardImage() {
+	public CardImage(Image image) {
 		this.image = image;
 	}
 

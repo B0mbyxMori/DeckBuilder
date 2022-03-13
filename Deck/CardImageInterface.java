@@ -1,4 +1,6 @@
+import java.awt.Image;
+
 interface CardImageInterface {
-	void getImage();
-	Image setImage(Image image);
+	Image getImage();
+	void setImage(Image image);
 }

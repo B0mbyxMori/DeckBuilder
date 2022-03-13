@@ -1,6 +1,6 @@
 class Deck implements DeckInterface {
         private CardBack back;
-        private int numberOfCards;
+        private double numberOfCards;
         private String deckName;
 
         public Deck(CardBack back, int numberOfCards, String deckName) {
@@ -9,8 +9,8 @@ class Deck implements DeckInterface {
                 this.numberOfCards = numberOfCards;
         }
 
-        public Image getBackImage() {
-                return CardBack.getImage();
+        public CardBack getBack() {
+                return back;
         };
 
         public String getDeckName() {
@@ -21,11 +21,11 @@ class Deck implements DeckInterface {
                 this.deckName = updatedDeckName;
         };
 
-        public int getNumberOfCards() {
+        public double getNumberOfCards() {
                 return numberOfCards;
         };
 
-        public void setNumberOfCards(int updatedNumberOfCards) {
+        public void setNumberOfCards(double updatedNumberOfCards) {
                 this.numberOfCards = updatedNumberOfCards;
         };
 }

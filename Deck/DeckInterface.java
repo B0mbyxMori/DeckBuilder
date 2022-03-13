@@ -1,9 +1,9 @@
 interface DeckInterface {
-	void getBack();
+	CardBack getBack();
 
-	void getType();
-	void setType();
+	String getDeckName();
+	void setDeckName(String updatedDeckName);
 
-	void getNumberOfCards();
-	void setNumberOfCards();
+	double getNumberOfCards();
+	void setNumberOfCards(double updatedNumberOfCards);
 }
